@@ -8,8 +8,8 @@
   // import Chat from "../ui/game/chat.svelte";
   import HUD from "../ui/game/hud.svelte";
   import Menu from "../ui/game/menu.svelte";
-  import Simplex from "../ui/dev/simplex.svelte";
-  import Points from "../ui/dev/poisson.svelte";
+  // import Simplex from "../ui/dev/simplex.svelte";
+  // import Points from "../ui/dev/poisson.svelte";
 
 
   let world;
@@ -71,7 +71,8 @@
   Use `wasd` keys to move around. <br>
   Unfortunately physics doesn't know about the terrain <br>
   and there's no multiplayer. <br>
-  Your more than welcome to remix this <a href="https://github.com/DefinitelyMaybe/glowing-octo-train/blob/main/LICENSE">(It's MIT lincensed)</a>
+  Your more than welcome to remix this <a href="https://github.com/DefinitelyMaybe/glowing-octo-train/blob/main/LICENSE">(It's MIT lincensed)</a><br>
+  If the terrain isn't textured, give the page a quick refresh.
   <!-- <Simplex></Simplex>
   <Points></Points> -->
 </details>
