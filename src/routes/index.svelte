@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     font-family: serif;
-    background-image: url("./resources/background-3.png");
+    background-image: url("/resources/background-3.png");
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: left;
