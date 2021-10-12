@@ -1,4 +1,5 @@
 import { Chunk } from "./chunk.js"
+import terrainWorker from "./terrainWorker.js?worker";
 
 
 export class ChunkBuilder {
@@ -6,7 +7,7 @@ export class ChunkBuilder {
   queue = [];
 
   constructor(numWorkers=4){
-    this.workers = [...Array(numWorkers)].map((_) => new Worker("src/terrain/terrainWorker.js", { type: "module" }));
+    this.workers = [...Array(numWorkers)].map((_) => new terrainWorker({ type: "module" }));
     this.free = [...this.workers];
   }
 

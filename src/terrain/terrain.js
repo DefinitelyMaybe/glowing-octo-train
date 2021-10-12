@@ -24,33 +24,33 @@ export class InfiniteTerrain {
     this.world = world
     this.entities = this.world.entities
 
-    const noiseTexture = load("./resources/terrain/simplex-noise.png")
+    const noiseTexture = load("/resources/terrain/simplex-noise.png")
     noiseTexture.wrapS = THREE.RepeatWrapping;
     noiseTexture.wrapT = THREE.RepeatWrapping;
 
     const atlas = new TextureAtlas();
     const p1 = atlas.load("diffuse", [
-      "./resources/terrain/dirt_01_diffuse-1024.png",
-      "./resources/terrain/grass1-albedo3-1024.png",
-      "./resources/terrain/sandyground-albedo-1024.png",
-      "./resources/terrain/worn-bumpy-rock-albedo-1024.png",
-      "./resources/terrain/rock-snow-ice-albedo-1024.png",
-      "./resources/terrain/snow-packed-albedo-1024.png",
-      "./resources/terrain/rough-wet-cobble-albedo-1024.png",
-      // './resources/terrain/sandy-rocks1-albedo-1024.png',
-      "./resources/terrain/bark1-albedo.jpg",
+      "/resources/terrain/dirt_01_diffuse-1024.png",
+      "/resources/terrain/grass1-albedo3-1024.png",
+      "/resources/terrain/sandyground-albedo-1024.png",
+      "/resources/terrain/worn-bumpy-rock-albedo-1024.png",
+      "/resources/terrain/rock-snow-ice-albedo-1024.png",
+      "/resources/terrain/snow-packed-albedo-1024.png",
+      "/resources/terrain/rough-wet-cobble-albedo-1024.png",
+      // '/resources/terrain/sandy-rocks1-albedo-1024.png',
+      "/resources/terrain/bark1-albedo.jpg",
     ])
     
     const p2 = atlas.load("normal", [
-      "./resources/terrain/dirt_01_normal-1024.jpg",
-      "./resources/terrain/grass1-normal-1024.jpg",
-      "./resources/terrain/sandyground-normal-1024.jpg",
-      "./resources/terrain/worn-bumpy-rock-normal-1024.jpg",
-      "./resources/terrain/rock-snow-ice-normal-1024.jpg",
-      "./resources/terrain/snow-packed-normal-1024.jpg",
-      "./resources/terrain/rough-wet-cobble-normal-1024.jpg",
-      // './resources/terrain/sandy-rocks1-normal-1024.jpg',
-      "./resources/terrain/bark1-normal3.jpg",
+      "/resources/terrain/dirt_01_normal-1024.jpg",
+      "/resources/terrain/grass1-normal-1024.jpg",
+      "/resources/terrain/sandyground-normal-1024.jpg",
+      "/resources/terrain/worn-bumpy-rock-normal-1024.jpg",
+      "/resources/terrain/rock-snow-ice-normal-1024.jpg",
+      "/resources/terrain/snow-packed-normal-1024.jpg",
+      "/resources/terrain/rough-wet-cobble-normal-1024.jpg",
+      // '/resources/terrain/sandy-rocks1-normal-1024.jpg',
+      "/resources/terrain/bark1-normal3.jpg",
     ])
 
     this.material = new THREE.MeshStandardMaterial({

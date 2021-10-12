@@ -126,12 +126,12 @@ export class ThreeInit {
     // TODO-DefinitelyMaybe: doesn't use the world.assets just yet
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-      "./resources/terrain/space-posx.jpg",
-      "./resources/terrain/space-negx.jpg",
-      "./resources/terrain/space-posy.jpg",
-      "./resources/terrain/space-negy.jpg",
-      "./resources/terrain/space-posz.jpg",
-      "./resources/terrain/space-negz.jpg",
+      "/resources/terrain/space-posx.jpg",
+      "/resources/terrain/space-negx.jpg",
+      "/resources/terrain/space-posy.jpg",
+      "/resources/terrain/space-negy.jpg",
+      "/resources/terrain/space-posz.jpg",
+      "/resources/terrain/space-negz.jpg",
     ]);
     texture.encoding = THREE.sRGBEncoding;
 
