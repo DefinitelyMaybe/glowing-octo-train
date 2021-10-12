@@ -95,6 +95,7 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+	pointer-events: all;
 }
 
 button:focus:not(:focus-visible) {
